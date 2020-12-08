@@ -1,4 +1,4 @@
-Various tweaks
+Various tweaks to spacehaven. Requires Modloader version 0.8.1 at minimum.
 
  - Power Node Connections (standing/wall/floor): 6/4/4
  - Power Node Capacity (Floor nodes): 2x
