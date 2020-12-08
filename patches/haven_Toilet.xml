@@ -2,18 +2,18 @@
 	<Operation Class="AttributeSet">
 		<xpath>/data/Element/me/data/l/element/features/toilet</xpath>
 		<attribute>dumpsNeeded</attribute>
-		<value>6</value>
+		<value>4</value>
 	</Operation>
 	<Operation Class="AttributeSet">
 		<!-- Biomatter -->
 		<xpath>/data/Product/product[@eid="2477"]/products/l[@element="71"]</xpath>
 		<attribute>produceEvery</attribute>
-		<value>2</value>
+		<value>3</value>
 	</Operation>
 	<Operation Class="AttributeSet">
 		<!-- Water -->
 		<xpath>/data/Product/product[@eid="2477"]/products/l[@element="16"]</xpath>
 		<attribute>howMuch</attribute>
-		<value>2</value>
+		<value>1</value>
 	</Operation>
 </Patch>
