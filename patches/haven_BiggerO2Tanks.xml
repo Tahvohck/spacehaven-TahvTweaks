@@ -1,0 +1,14 @@
+<Patch>
+	<Operation Class="AttributeMath">
+		<!-- Bigger oxygen tanks -->
+		<xpath>/data/Element/me/data/l/element/spaceSuitLocker[@maxOxygen]</xpath>
+		<attribute>maxOxygen</attribute>
+		<value opType="multiply">1.5</value>
+	</Operation>
+	<Operation Class="AttributeSet">
+		<!-- Bigger oxygen tanks -->
+		<xpath>/data/Element/me/data/l/element/spaceSuitLocker[@maxOxygen="1500"]</xpath>
+		<attribute>maxOxygen</attribute>
+		<value>3000</value>
+	</Operation>
+</Patch>

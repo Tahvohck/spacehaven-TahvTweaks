@@ -1,0 +1,14 @@
+<Patch>
+	<Noload />
+	<!-- Don't like the effect of this, will need a less sledgehammer approach later -->
+	<Operation Class="Remove">
+		<!-- Floor marking (square) -->
+		<xpath>/data/Element/me/linked/l[@id="1093"]</xpath>
+		<value></value>
+	</Operation>
+	<Operation Class="Remove">
+		<!-- Floor marking (Line) -->
+		<xpath>/data/Element/me/linked/l[@id="1081"]</xpath>
+		<value></value>
+	</Operation>
+</Patch>

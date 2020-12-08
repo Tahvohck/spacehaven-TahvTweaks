@@ -1,0 +1,16 @@
+<Patch>
+	<Operation Class="AttributeSet">
+		<!-- Shuttle storage capacity -->
+		<xpath>/data/Craft/craft[@cid="20"]/stores</xpath>
+		<attribute>capacity</attribute>
+		<value>20</value>
+	</Operation>
+	<Operation Class="Replace">
+		<!-- Shuttle floor restrictions -->
+		<xpath>/data/Element/me[@mid="761"]/objectInfo/restrictions/l</xpath>
+		<attribute>capacity</attribute>
+		<value>
+			<l gridX="3" gridY="0" sizeX="2" sizeY="1" type="Floor" />
+		</value>
+	</Operation>
+</Patch>

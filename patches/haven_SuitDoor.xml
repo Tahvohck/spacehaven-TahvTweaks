@@ -1,0 +1,7 @@
+<Patch>
+	<Operation Class="Remove">
+		<!-- Remove side blocks -->
+		<xpath>/data/Element/me[@mid="993"]/objectInfo/restrictions/l[@sizeX="3"]</xpath>
+		<value></value>
+	</Operation>
+</Patch>

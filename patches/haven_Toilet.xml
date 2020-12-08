@@ -1,0 +1,19 @@
+<Patch>
+	<Operation Class="AttributeSet">
+		<xpath>/data/Element/me/data/l/element/features/toilet</xpath>
+		<attribute>dumpsNeeded</attribute>
+		<value>6</value>
+	</Operation>
+	<Operation Class="AttributeSet">
+		<!-- Biomatter -->
+		<xpath>/data/Product/product[@eid="2477"]/products/l[@element="71"]</xpath>
+		<attribute>produceEvery</attribute>
+		<value>2</value>
+	</Operation>
+	<Operation Class="AttributeSet">
+		<!-- Water -->
+		<xpath>/data/Product/product[@eid="2477"]/products/l[@element="16"]</xpath>
+		<attribute>howMuch</attribute>
+		<value>2</value>
+	</Operation>
+</Patch>

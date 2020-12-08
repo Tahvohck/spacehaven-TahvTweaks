@@ -1,0 +1,9 @@
+<Patch>
+	<Noload /> <!-- Doesn't actually work, don't load this -->
+	<Operation Class="AttributeSet">
+		<!--Wall (882) and floor (2292) power nodes.-->
+		<xpath>/data/Element/me[@mid="2292" or @mid="882"]/objectInfo/cu/groups/l/customPrice/l[@elementId="1919"]</xpath>
+		<attribute>howMuch</attribute>
+		<value>0.25</value>
+	</Operation>
+</Patch>

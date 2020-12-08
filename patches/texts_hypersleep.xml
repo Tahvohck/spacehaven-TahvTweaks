@@ -1,0 +1,8 @@
+<Patch>
+	<Operation Class="Replace">
+		<xpath>/t/object_cryo_chamber_desc/EN</xpath>
+		<value>
+			<EN>Capable of suspending the body’s autonomic functions while maintaining the health of each individual cell during stasis. Needs to be primed with an energy rod.</EN>
+		</value>
+	</Operation>
+</Patch>

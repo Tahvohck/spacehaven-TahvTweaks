@@ -1,0 +1,248 @@
+<Patch>
+	<Noload />
+	<!-- NOTE: It's important that these are done in order from greatest to least
+		 If they aren't, one patch might affect the next! --> 
+
+	<!-- Power Consumption -->
+	<Operation Class="AttributeSet">
+		<!-- Default 1000 -->
+		<!-- (1906) Power Capacity Node -->
+		<xpath>/data/Element/me/data/l/element/features/powerGrid[@capacity="1000"]</xpath>
+		<attribute>capacity</attribute>
+		<value>10000</value>
+	</Operation>
+	<Operation Class="AttributeSet">
+		<!-- Default 600 -->
+		<!-- (1885) X3 Generator -->
+		<xpath>/data/Element/me/data/l/element/features/powerGrid[@capacity="600"]</xpath>
+		<attribute>capacity</attribute>
+		<value>6000</value>
+	</Operation>
+	<Operation Class="AttributeSet">
+		<!-- Default 500 -->
+		<!-- ( 916) Unknown (Sandbox producer?) -->
+		<xpath>/data/Element/me/data/l/element/features/powerGrid[@capacity="500"]</xpath>
+		<attribute>capacity</attribute>
+		<value>5000</value>
+	</Operation>
+	<Operation Class="AttributeSet">
+		<!-- Default 400 -->
+		<!-- ( 709) X2 Generator -->
+		<xpath>/data/Element/me/data/l/element/features/powerGrid[@capacity="400"]</xpath>
+		<attribute>capacity</attribute>
+		<value>4000</value>
+	</Operation>
+	<Operation Class="AttributeSet">
+		<!-- Default 200 -->
+		<!-- (2683) Energium Generator -->
+		<!-- (1863) X1 Generator -->
+		<!-- ( 884) Unknown -->
+		<xpath>/data/Element/me/data/l/element/features/powerGrid[@capacity="200"]</xpath>
+		<attribute>capacity</attribute>
+		<value>2000</value>
+	</Operation>
+	<Operation Class="AttributeSet">
+		<!-- (  33) Standing power nodes. -->
+		<xpath>/data/Element/me/data/l/element/features/powerGrid[@capacity="150"]</xpath>
+		<attribute>capacity</attribute>
+		<value>1500</value>
+	</Operation>
+	<Operation Class="AttributeSet">
+		<!-- (2292) floor power node (default 25) -->
+		<!-- (2253) Solar panel seg  (default 50) -->
+		<!-- ( 882) Wall power node  (default 50) -->
+		<xpath>/data/Element/me/data/l/element/features/powerGrid[@capacity="25" or @capacity="50"]</xpath>
+		<attribute>capacity</attribute>
+		<value>500</value>
+	</Operation>
+	<Operation Class="AttributeSet">
+		<!-- (2720) Asteroid power node (default 25) -->
+		<xpath>/data/Element/me/data/l/element/features/powerGrid[@capacity="40"]</xpath>
+		<attribute>capacity</attribute>
+		<value>400</value>
+	</Operation>
+	
+	
+	<!-- Power Consumption -->
+	<Operation Class="AttributeSet">
+		<xpath>/data/Element/me/data/l/element/features/produces/l[@usePowerPerSec="20.0"]</xpath>
+		<attribute>usePowerPerSec</attribute>
+		<value>200.0</value>
+	</Operation>
+	<Operation Class="AttributeSet">
+		<xpath>/data/Element/me/data/l/element/features/produces/l[@usePowerPerSec="15.0"]</xpath>
+		<attribute>usePowerPerSec</attribute>
+		<value>150.0</value>
+	</Operation>
+	<Operation Class="AttributeSet">
+		<xpath>/data/Element/me/data/l/element/features/produces/l[@usePowerPerSec="10.0"]</xpath>
+		<attribute>usePowerPerSec</attribute>
+		<value>100.0</value>
+	</Operation>
+	<Operation Class="AttributeSet">
+		<xpath>/data/Element/me/data/l/element/features/produces/l[@usePowerPerSec="5.0"]</xpath>
+		<attribute>usePowerPerSec</attribute>
+		<value>50.0</value>
+	</Operation>
+	<Operation Class="AttributeSet">
+		<xpath>/data/Element/me/data/l/element/features/produces/l[@usePowerPerSec="4.0"]</xpath>
+		<attribute>usePowerPerSec</attribute>
+		<value>40.0</value>
+	</Operation>
+	<Operation Class="AttributeSet">
+		<xpath>/data/Element/me/data/l/element/features/produces/l[@usePowerPerSec="3.0"]</xpath>
+		<attribute>usePowerPerSec</attribute>
+		<value>30.0</value>
+	</Operation>
+	<Operation Class="AttributeSet">
+		<xpath>/data/Element/me/data/l/element/features/produces/l[@usePowerPerSec="1.0"]</xpath>
+		<attribute>usePowerPerSec</attribute>
+		<value>10.0</value>
+	</Operation>
+
+
+	<!-- Direct energy production -->
+	<Operation Class="AttributeSet">
+		<xpath>/data/Product/product/products/l[@element="34" and @howMuch="50"]</xpath>
+		<attribute>howMuch</attribute>
+		<value>500</value>
+	</Operation>
+	<Operation Class="AttributeSet">
+		<xpath>/data/Product/product/products/l[@element="34" and @howMuch="40"]</xpath>
+		<attribute>howMuch</attribute>
+		<value>400</value>
+	</Operation>
+	<Operation Class="AttributeSet">
+		<xpath>/data/Product/product/products/l[@element="34" and @howMuch="25"]</xpath>
+		<attribute>howMuch</attribute>
+		<value>250</value>
+	</Operation>
+	<Operation Class="AttributeSet">
+		<xpath>/data/Product/product/products/l[@element="34" and @howMuch="15"]</xpath>
+		<attribute>howMuch</attribute>
+		<value>150</value>
+	</Operation>
+	<Operation Class="AttributeSet">
+		<xpath>/data/Product/product/products/l[@element="34" and @howMuch="10"]</xpath>
+		<attribute>howMuch</attribute>
+		<value>20</value>
+	</Operation>
+	<Operation Class="AttributeSet">
+		<xpath>/data/Product/product/products/l[@element="34" and @howMuch="1"]</xpath>
+		<attribute>howMuch</attribute>
+		<value>10</value>
+	</Operation>
+	<!-- Solar panel production -->
+	<Operation Class="AttributeSet">
+		<xpath>/data/Element/me/data/l/element/solar[@powerPerSec="3.0"]</xpath>
+		<attribute>powerPerSec</attribute>
+		<value>30.0</value>
+	</Operation>
+	
+	
+	<!-- Misc -->
+	<Operation Class="AttributeSet">
+		<!-- Stabilizer power cost per hull point -->
+		<xpath>/data/Element/me/data/l/element/features/stabilizer[@powerUsgPerPoint="10"]</xpath>
+		<attribute>powerUsgPerPoint</attribute>
+		<value>100</value>
+	</Operation>
+	<Operation Class="AttributeSet">
+		<!-- Shield power cost ratio -->
+		<xpath>/data/Element/me/data/l/element/shield[@powerToShieldRatio="120"]</xpath>
+		<attribute>powerToShieldRatio</attribute>
+		<value>1200</value>
+	</Operation>
+	<Operation Class="AttributeSet">
+		<!-- Scanner power usage -->
+		<!-- (2238) Unused scanner? -->
+		<!-- (2254) Scanner subsection -->
+		<xpath>/data/Element/me/data/l/element/scanner[@powerUsgPerShot="120"]</xpath>
+		<attribute>powerUsgPerShot</attribute>
+		<value>1200</value>
+	</Operation>
+	<Operation Class="AttributeSet">
+		<!-- Turret power usage -->
+		<!-- (2241) Unused turret? -->
+		<!-- (2271) Turret subsection -->
+		<xpath>/data/Element/me/data/l/element/turret[@powerUsgPerShot="10"]</xpath>
+		<attribute>powerUsgPerShot</attribute>
+		<value>100</value>
+	</Operation>
+	<Operation Class="AttributeSet">
+		<!-- Turret power usage -->
+		<!-- (2707) Missile turret subsection -->
+		<xpath>/data/Element/me/data/l/element/turret[@powerUsgPerShot="2"]</xpath>
+		<attribute>powerUsgPerShot</attribute>
+		<value>20</value>
+	</Operation>
+</Patch>
+<!--
+
+No annotation, default 10, mid 2259
+Seems to be a subsection of the hull stabilizer
+/data/Element/me/data/l/element/features/stabilizer/@powerUsgPerPoint
+
+Shield, default 120, mid 469
+/data/Element/me/data/l/element/shield/@powerToShieldRatio
+
+default 3.0, mid 2224, Solar power production
+/data/Element/me/data/l/element/solar/@powerPerSec
+
+default 120, mid 2238, Unused scanner?
+/data/Element/me/data/l/element/scanner/@powerUsgPerShot
+
+default 120, mid 2254, Scanner subsection
+/data/Element/me/data/l/element/scanner/@powerUsgPerShot
+
+default 10, mid 2241, Unused turret?
+/data/Element/me/data/l/element/turret/@powerUsgPerShot
+
+default 10, mid 2271, Energy turret subsection
+/data/Element/me/data/l/element/turret/@powerUsgPerShot
+
+default 2, mid 2707, Missile turret subsection
+/data/Element/me/data/l/element/turret/@powerUsgPerShot
+
+
+###################################
+The following are all on: 
+/data/Element/me/data/l/element/features/produces/l/@usePowerPerSec
+
+default 0.0, mid 709,	Generator X2
+default 0.0, mid 1448,	No annotation			Part of the tool making workbench?
+default 0.0, mid 1863,	Generator X1			this one isn't worth it. Maybe redo?
+default 0.0, mid 1885,	Generator X3
+default 0.0, mid 2643,	Algae producer
+default 0.0, mid 2683,	Energium Generator
+default 1.0, mid 61,	CO2 producer?			Products: Water to O2, CO2 to carbon, carbon to CO2, smoke to chem and carbon
+default 1.0, mid 79,	No annotation
+default 1.0, mid 159,	No annotation
+default 1.0, mid 861,	Gas Scrubber			Products: Water to O2, CO2 to carbon, smoke to chem and carbon
+default 1.0, mid 918,	Thermal Regulator
+default 1.0, mid 922,	Gas Scrubber
+default 1.0, mid 924,	O2 producer
+default 1.0, mid 987,	Wall Thermal Regulator
+default 1.0, mid 1871,	CO2 Producer
+default 3.0, mid 2455,	Composter
+default 4.0, mid 621,	Kitchen
+default 5.0, mid 2451,	Water Collector
+default 10.0, mid 125,	Item Fabricator
+default 10.0, mid 1966,	No annotation			Appears to be a subsection of the cell fuser
+default 15.0, mid 791,	No annotation			Produces heat and hazard gas?
+default 15.0, mid 939,	No annotation			Appears to be a subsection of the chemical refinery
+default 15.0, mid 976,	No annotation			Appears to be a subsection of the energy refinery
+default 15.0, mid 1909,	Assembler
+default 15.0, mid 1959,	product 1934, Weaver
+default 15.0, mid 2010,	Water Purifier
+default 20.0, mid 792,	No annotation			Appears to be a subsection of the recycler? Product 181
+default 20.0, mid 1881,	No annotation			Appears to be a subsection of the recycler? Product 1879
+default 20.0, mid 1975,	No annotation			"electroFab1F"
+default 20.0, mid 1992,	Optronics fabricator
+default 20.0, mid 1998,	Advanced Assembler
+
+default 0, mid 916, Sandbox producer?
+/data/Element/me/data/l/element/features/produces/l/@usePowerPerSec
+/data/Element/me/data/l/element/features/produces/l/@usePowerPerSec
+/data/Element/me/data/l/element/features/produces/l/@usePowerPerSec
+-->

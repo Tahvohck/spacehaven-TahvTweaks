@@ -1,0 +1,14 @@
+<Patch>
+	<Operation Class="AttributeSet">
+		<!-- Reduce floor space needed -->
+		<xpath>/data/Element/me[@mid="982"]/objectInfo/restrictions/l[@sizeX="3"]</xpath>
+		<attribute>sizeX</attribute>
+		<value>2</value>
+	</Operation>
+	<Operation Class="AttributeSet">
+		<!-- Reduce floor space needed -->
+		<xpath>/data/Element/me[@mid="982"]/objectInfo/restrictions/l[@gridX="-1"]</xpath>
+		<attribute>gridX</attribute>
+		<value>0</value>
+	</Operation>
+</Patch>
