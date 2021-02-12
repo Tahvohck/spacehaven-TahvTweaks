@@ -5,10 +5,18 @@
 		<attribute>sizeX</attribute>
 		<value>2</value>
 	</Operation>
-	<Operation Class="AttributeSet">
-		<!-- Reduce floor space needed -->
-		<xpath>/data/Element/me[@mid="982"]/objectInfo/restrictions/l[@gridX="-1"]</xpath>
-		<attribute>gridX</attribute>
-		<value>0</value>
+	<Operation Class="Replace">
+		<xpath>/data/Element/me[@mid="982"]/data/l[@eid="2"]/element/definedStates/l/tasks</xpath>
+		<value>
+			<tasks>
+				<l dir="D9" gridOffX="-1" gridOffY="0" setStateInUse="false" task="StandWork" usage="Both">
+					<activate activateOffX="-1" activateOffY="0" />
+					<r0offset charOffX="16" charOffY="5" />
+					<r90offset charOffX="16" charOffY="-10" />
+					<r180offset charOffX="-30" charOffY="-5" />
+					<r270offset charOffX="0" charOffY="10" />
+				</l>
+			</tasks>
+		</value>
 	</Operation>
 </Patch>
